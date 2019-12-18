@@ -165,4 +165,4 @@ E.  Create a Roster class (roster.cpp) by doing the following:
     classRoster.remove("A3");
     //expected: the above line should print a message saying such a student with this ID was not found.
 
-5.  Call the destructor to release the Roster memory.
+    5.  Call the destructor to release the Roster memory.
