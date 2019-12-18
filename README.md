@@ -107,32 +107,31 @@ Note: Degree type should be populated in subclasses only.
   Note: Leave the implementation of the getDegreeProgram() function empty.
  
 
-3.  Create the three following classes as subclasses of Student, using the files created in part B:
+ 3.  Create the three following classes as subclasses of Student, using the files created in part B:
 
-  •   SecurityStudent
+    •   SecurityStudent
 
-  •   NetworkStudent
+    •   NetworkStudent
 
-  •   SoftwareStudent
+    •   SoftwareStudent
 
   Each subclass should override the getDegreeProgram() function. Each subclass should have a data member to hold the enumerated type for   the degree program using the types defined in part C.
  
-
 E.  Create a Roster class (roster.cpp) by doing the following:
 
-  1.  Create an array of pointers, classRosterArray, to hold the data provided in the studentData table.
+    1.  Create an array of pointers, classRosterArray, to hold the data provided in the studentData table.
 
-  2.  Create a student object for each  student in the data table by using the subclasses NetworkStudent, SecurityStudent, and SoftwareStudent, and populate classRosterArray.
+    2.  Create a student object for each  student in the data table by using the subclasses NetworkStudent, SecurityStudent, and SoftwareStudent, and populate classRosterArray.
 
-    a.  Apply pointer operations when parsing each  set of data identified in the studentData table.
+      a.  Apply pointer operations when parsing each  set of data identified in the studentData table.
 
-    b.  Add each student object to classRosterArray.
+      b.  Add each student object to classRosterArray.
 
-  3.  Define the following functions:
+    3.  Define the following functions:
 
-    a.  public void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, < degree program >) that sets the instance variables from part D1 and updates the roster.
+      a.  public void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, < degree program >) that sets the instance variables from part D1 and updates the roster.
 
-    b.  public void remove(string studentID) that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
+      b.  public void remove(string studentID) that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
  
 
     c.  public void printAll() that prints a complete tab-separated list of student data using accessor functions with the provided  format: 1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through all  the students in classRosterArray and call the print() function for each student.
@@ -148,15 +147,15 @@ E.  Create a Roster class (roster.cpp) by doing the following:
     f.  public void printByDegreeProgram(int degreeProgram) that prints out student information for a degree program specified by an enumerated type
  
 
-F.  Demonstrate the program’s required functionality by adding a void main() function to roster.cpp, which will contain the required function calls to achieve the following results:
+ F.  Demonstrate the program’s required functionality by adding a void main() function to roster.cpp, which will contain the required function calls to achieve the following results:
 
-  1.  Print out to the screen, via your application, the course title, the programming language used, your student ID, and your name.
+    1.  Print out to the screen, via your application, the course title, the programming language used, your student ID, and your name.
 
-  2.  Create an instance of the Roster class called classRoster.
+    2.  Create an instance of the Roster class called classRoster.
 
-  3.  Add each student to classRoster.
+    3.  Add each student to classRoster.
 
-  4.  Convert the following pseudo code to complete the rest of the main() function:
+    4.  Convert the following pseudo code to complete the rest of the main() function:
 classRoster.printAll();
 classRoster.printInvalidEmails();
 //loop through classRosterArray and for each element:
