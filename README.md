@@ -43,17 +43,17 @@ A.  Modify the studentData table to include your personal information as the las
 
 B.  Create a C++ project in your integrated development environment (IDE) with the following files:
 
-•   degree.h
+    • degree.h
 
-•   student.h and student.cpp
+    • student.h and student.cpp
 
-•   networkStudent.h and networkStudent.cpp
+    • networkStudent.h and networkStudent.cpp
 
-•   securityStudent.h and securityStudent.cpp
+    • securityStudent.h and securityStudent.cpp
 
-•   softwareStudent.h and softwareStudent.cpp
+    • softwareStudent.h and softwareStudent.cpp
 
-•   roster.h and roster.cpp
+    • roster.h and roster.cpp
  
 
 Note: There must be a total of 11 source code files.
@@ -69,19 +69,19 @@ D.  For the Student class, do the following:
 
   1.  Create the base class Student in the files student.h and student.cpp, which includes each  of the following variables:
 
-    •   student ID
+    • student ID
 
-    •   first name
+    • first name
 
-    •   last name
+    • last name
 
-    •   email address
+    • email address
 
-    •   age
+    • age
 
-    •   array of number of days to complete each course
+    • array of number of days to complete each course
 
-    •   degree types
+    • degree types
  
 
 Note: Degree type should be populated in subclasses only.
@@ -89,17 +89,17 @@ Note: Degree type should be populated in subclasses only.
 
 2.  Create each of the following functions in the Student class:
 
-     a.  an accessor (i.e., getter) for each  instance variable from part D1
+        a. an accessor (i.e., getter) for each  instance variable from part D1
 
-     b.  a mutator (i.e., setter) for each instance variable from part D1
+        b. a mutator (i.e., setter) for each instance variable from part D1
  
-     c.  constructor using all  of the input parameters provided in the table
+        c. constructor using all  of the input parameters provided in the table
 
-     d.  virtual print() to print specific student data 
+        d. virtual print() to print specific student data 
 
-     e.  destructor
+        e. destructor
 
-     f.  virtual getDegreeProgram()
+        f. virtual getDegreeProgram()
      
  
   Note: All access and changes to the instance variables of the Student class should be done through the accessor and mutator functions.
@@ -156,13 +156,13 @@ E.  Create a Roster class (roster.cpp) by doing the following:
     3.  Add each student to classRoster.
 
     4.  Convert the following pseudo code to complete the rest of the main() function:
-classRoster.printAll();
-classRoster.printInvalidEmails();
-//loop through classRosterArray and for each element:
-classRoster.printAverageDaysInCourse(/*current_object's student id*/);
-classRoster.printByDegreeProgram(SOFTWARE);
-classRoster.remove("A3");
-classRoster.remove("A3");
- //expected: the above line should print a message saying such a student with this ID was not found.
+    classRoster.printAll();
+    classRoster.printInvalidEmails();
+    //loop through classRosterArray and for each element:
+    classRoster.printAverageDaysInCourse(/*current_object's student id*/);
+    classRoster.printByDegreeProgram(SOFTWARE);
+    classRoster.remove("A3");
+    classRoster.remove("A3");
+    //expected: the above line should print a message saying such a student with this ID was not found.
 
 5.  Call the destructor to release the Roster memory.
