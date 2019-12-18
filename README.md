@@ -89,23 +89,21 @@ Note: Degree type should be populated in subclasses only.
 
 2.  Create each of the following functions in the Student class:
 
-  a.  an accessor (i.e., getter) for each  instance variable from part D1
+     a.  an accessor (i.e., getter) for each  instance variable from part D1
 
-  b.  a mutator (i.e., setter) for each instance variable from part D1
+     b.  a mutator (i.e., setter) for each instance variable from part D1
  
+     c.  constructor using all  of the input parameters provided in the table
 
+     d.  virtual print() to print specific student data 
+
+     e.  destructor
+
+     f.  virtual getDegreeProgram()
+     
+ 
   Note: All access and changes to the instance variables of the Student class should be done through the accessor and mutator functions.
  
-
-  c.  constructor using all  of the input parameters provided in the table
-
-  d.  virtual print() to print specific student data 
-
-  e.  destructor
-
-  f.  virtual getDegreeProgram()
- 
-
   Note: Leave the implementation of the getDegreeProgram() function empty.
  
 
